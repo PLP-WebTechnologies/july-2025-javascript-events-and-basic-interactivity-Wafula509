@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Event Handling Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>JavaScript Interactive Elements</h1>
+
+  <div class="interactive-section">
+    <h2>1. Light/Dark Mode Toggle</h2>
+    <button id="theme-toggle">Switch to Dark Mode</button>
+  </div>
+
+  <div class="interactive-section">
+    <h2>2. Collapsible FAQ Section</h2>
+    <div class="faq-item">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">What is the DOM?</h3>
+      <p class="faq-answer">The Document Object Model (DOM) is a programming interface for HTML and XML documents.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">How do you declare a variable?</h3>
+      <p class="faq-answer">You can use `var`, `let`, or `const` to declare a variable in JavaScript.</p>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>3. Custom Form Validation</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span class="error-message" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error-message" id="password-error"></span>
+      </div>
+      <button type="submit">Submit</button>
+      <div id="form-success" class="success-message"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
